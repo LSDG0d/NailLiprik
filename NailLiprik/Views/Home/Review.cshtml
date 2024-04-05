@@ -1,0 +1,41 @@
+﻿@model IEnumerable<NailLiprik.Models.ReviewsModels>
+
+@{
+    ViewBag.Title = "Отзывы";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<button class="btn btn-outline-dark">@Html.ActionLink("Оставить отзыв", "Create")</button>
+    
+
+<table class="table">
+    <tr>
+        <th>
+            Клиент
+        </th>
+        <th>
+            Отзыв
+        </th>
+        <th>
+            Дата
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuthorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+        </td>
+    </tr>
+}
+
+</table>

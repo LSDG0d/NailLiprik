@@ -1,0 +1,22 @@
+﻿
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#footer {
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+}
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
